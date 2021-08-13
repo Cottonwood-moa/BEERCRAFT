@@ -52,6 +52,15 @@
       justify-content: center;
       line-height: 900px;
     }
+    .card-body{
+      padding: 5rem;
+    }
+    @media (max-width: 991px) {
+  .card-body{
+    padding: 0;
+    padding-top: 5rem;
+  }
+}
   </style>
 </head>
 
@@ -244,9 +253,15 @@
         </div>
 
         <div class="card" style="color:black; font-size: 15px;">
-          <div class="card-body" style="padding: 5rem;">
-            <div class="card-text" style="white-space: pre-line; font-size: 17px; display: flex;">
-              <p style="color: skyblue; width: 100px;">{{ comment.author }}&nbsp;&nbsp;&nbsp;&nbsp;</p><br>
+          <div class="card-body">
+            <div class="card-text" style="white-space: pre-line; font-size: 17px; display: flex; margin-bottom: 50px;">
+              <div style="width: 200px; display: flex; justify-content: center;
+              align-items: center;">
+                <div style="color: rgb(255, 255, 255); background-color:skyblue ; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center;
+                justify-content: center;">
+                 <p style="margin: 0; font-weight: bold;">{{ comment.author }}</p>
+                </div> 
+                </div><br>
               <p style="max-width: 940px;">{{ comment }}</p>
             </div>
 
