@@ -8,7 +8,7 @@ urlpatterns = [
     path('ver1', views.ver1, name = 'ver1'),
     path('ver2', views.ver2, name = 'ver2'),
     path('ver3', views.ver3, name = 'ver3'),
-    # path('ver4', views.ver4, name = 'ver4'),
+    path('ver4', views.ver4, name = 'ver4'),
     
     path('detail/review_create/<int:DetailInfo_id>', views.review_create, name='review_create'),
     path('common/', include('common.urls')),
