@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ['*','beercraft.ga']
 
 INSTALLED_APPS = [
     'beer',
+    'test',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
