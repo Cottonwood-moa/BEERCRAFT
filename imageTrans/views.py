@@ -1,7 +1,9 @@
 from django.shortcuts import render
 
-
+# =================================
 # import tensorflow as tf
+# import tensorflow_hub as hub
+# =================================
 import IPython.display as display
 
 import matplotlib.pyplot as plt
@@ -11,8 +13,6 @@ import numpy as np
 import PIL.Image
 import time
 import functools
-
-import tensorflow_hub as hub
 
 
 # def tensor_to_image(tensor):
