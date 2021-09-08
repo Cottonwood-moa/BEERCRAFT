@@ -1,6 +1,3 @@
-from django.shortcuts import render
-
-
 import tensorflow as tf
 import IPython.display as display
 
@@ -16,16 +13,13 @@ import functools
 
 import tensorflow_hub as hub
 
-
 def tensor_to_image(tensor):
   tensor = tensor*255
   tensor = np.array(tensor, dtype=np.uint8)
   if np.ndim(tensor)>3:
     assert tensor.shape[0] == 1
     tensor = tensor[0]
-  transedImg = PIL.Image.fromarray(tensor)
-  transedImg.save("Test.png",'PNG')
-  return transedImg
+  return PIL.Image.fromarray(tensor)
 content_path = tf.keras.utils.get_file('YellowLabradorLooking_new.jpg', 'https://storage.googleapis.com/download.tensorflow.org/example_images/YellowLabradorLooking_new.jpg')
 
 # https://commons.wikimedia.org/wiki/File:Vassily_Kandinsky,_1913_-_Composition_7.jpg
@@ -47,14 +41,9 @@ def load_img(path_to_img):
   img = img[tf.newaxis, :]
   return img
 
-# Create your views here.
-def index(request):
-  if request.method == 'POST':
-    content_image = load_img(content_path)
-    style_image = load_img(style_path)
-    hub_module = hub.load('https://tfhub.dev/google/magenta/arbitrary-image-stylization-v1-256/1')
-    stylized_image = hub_module(tf.constant(content_image), tf.constant(style_image))[0]
-    transedImg = tensor_to_image(stylized_image)
-    return render(request, 'imageTrans/test.html',{'transedImg' : transedImg})
-  else:
-    return render(request, 'imageTrans/index.html')
+def image_result():
+  content_image = load_img(content_path)
+  style_image = load_img(style_path)
+  hub_module = hub.load('https://tfhub.dev/google/magenta/arbitrary-image-stylization-v1-256/1')
+  stylized_image = hub_module(tf.constant(content_image), tf.constant(style_image))[0]
+  tensor_to_image(stylized_image)
