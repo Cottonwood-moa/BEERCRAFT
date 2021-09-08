@@ -22,8 +22,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'yjsboo+%m=w*jrh)-ec%gm#+*b@#q57@-4(!p@d1l4ndkx1s+6'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+# 개발중일 땐 True , 배포할 땐 False
+DEBUG = False 
 
 ALLOWED_HOSTS = ['*','beercraft.ga']
 
@@ -32,7 +32,7 @@ ALLOWED_HOSTS = ['*','beercraft.ga']
 
 INSTALLED_APPS = [
     'beer',
-    # 'imageTrans',
+    'imageTrans',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
