@@ -1,8 +1,8 @@
 from django.shortcuts import render
 
 # =================================
-# import tensorflow as tf
-# import tensorflow_hub as hub
+import tensorflow as tf
+import tensorflow_hub as hub
 # =================================
 import IPython.display as display
 
