@@ -15,7 +15,7 @@ import time
 import functools
 import test as t
 
-
+print(t.test(1,2))
 
 # def tensor_to_image(tensor):
 #   tensor = tensor*255
