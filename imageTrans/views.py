@@ -14,7 +14,8 @@ import PIL.Image
 import time
 import functools
 
-
+def test(a,b):
+  return a+b
 # def tensor_to_image(tensor):
 #   tensor = tensor*255
 #   tensor = np.array(tensor, dtype=np.uint8)
