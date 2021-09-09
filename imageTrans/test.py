@@ -1,2 +1,2 @@
-def test(a,b):
+def plusFunc(a,b):
   return a+b
