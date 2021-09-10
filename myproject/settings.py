@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'yjsboo+%m=w*jrh)-ec%gm#+*b@#q57@-4(!p@d1l4ndkx1s+6'
 
 # 개발중일 땐 True , 배포할 땐 False
-DEBUG = True 
+DEBUG = False 
 
 ALLOWED_HOSTS = ['*','beercraft.ga']
 
