@@ -45,12 +45,12 @@ def index(request):
   if request.method == 'POST':
     content_path = tf.keras.utils.get_file('YellowLabradorLooking_new.jpg', 'https://storage.googleapis.com/download.tensorflow.org/example_images/YellowLabradorLooking_new.jpg')
     style_path = tf.keras.utils.get_file('kandinsky5.jpg','https://storage.googleapis.com/download.tensorflow.org/example_images/Vassily_Kandinsky%2C_1913_-_Composition_7.jpg')
-    content_image = load_img(content_path)
-    style_image = load_img(style_path)
-    pb_path = 'imageTransModel'
-    hub_module = tf.saved_model.load(pb_path)
-    stylized_image = hub_module(tf.constant(content_image), tf.constant(style_image))[0]
-    resultImg = tensor_to_image(stylized_image)
+    # content_image = load_img(content_path)
+    # style_image = load_img(style_path)
+    # pb_path = 'imageTransModel'
+    # hub_module = tf.saved_model.load(pb_path)
+    # stylized_image = hub_module(tf.constant(content_image), tf.constant(style_image))[0]
+    # resultImg = tensor_to_image(stylized_image)
     # resultImg.save("resultImg.png",'PNG')
     # return render(request, 'imageTrans/test.html',{'resultImg' : resultImg})
 
