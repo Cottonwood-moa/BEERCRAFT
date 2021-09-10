@@ -51,6 +51,7 @@ def index(request):
     hub_module = tf.saved_model.load(pb_path)
     stylized_image = hub_module(tf.constant(content_image), tf.constant(style_image))[0]
     resultImg = tensor_to_image(stylized_image)
+    # resultImg.save("resultImg.png",'PNG')
     # return render(request, 'imageTrans/test.html',{'resultImg' : resultImg})
 
     # ==============================================================================
