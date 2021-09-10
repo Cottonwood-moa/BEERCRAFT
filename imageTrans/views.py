@@ -2,7 +2,6 @@ from django.shortcuts import render
 
 # =================================
 import tensorflow as tf
-# import tensorflow_hub as hub
 # =================================
 import IPython.display as display
 
@@ -13,34 +12,33 @@ import numpy as np
 import PIL.Image
 import time
 import functools
-# import test as t
 
 
-# def tensor_to_image(tensor):
-#   tensor = tensor*255
-#   tensor = np.array(tensor, dtype=np.uint8)
-#   if np.ndim(tensor)>3:
-#     assert tensor.shape[0] == 1
-#     tensor = tensor[0]
-#   transedImg = PIL.Image.fromarray(tensor)
-#   transedImg.save("Test.png",'PNG')
-#   return transedImg
+def tensor_to_image(tensor):
+  tensor = tensor*255
+  tensor = np.array(tensor, dtype=np.uint8)
+  if np.ndim(tensor)>3:
+    assert tensor.shape[0] == 1
+    tensor = tensor[0]
+  transedImg = PIL.Image.fromarray(tensor)
+  transedImg.save("Test.png",'PNG')
+  return transedImg
 
-# def load_img(path_to_img):
-#   max_dim = 512
-#   img = tf.io.read_file(path_to_img)
-#   img = tf.image.decode_image(img, channels=3)
-#   img = tf.image.convert_image_dtype(img, tf.float32)
+def load_img(path_to_img):
+  max_dim = 512
+  img = tf.io.read_file(path_to_img)
+  img = tf.image.decode_image(img, channels=3)
+  img = tf.image.convert_image_dtype(img, tf.float32)
 
-#   shape = tf.cast(tf.shape(img)[:-1], tf.float32)
-#   long_dim = max(shape)
-#   scale = max_dim / long_dim
+  shape = tf.cast(tf.shape(img)[:-1], tf.float32)
+  long_dim = max(shape)
+  scale = max_dim / long_dim
 
-#   new_shape = tf.cast(shape * scale, tf.int32)
+  new_shape = tf.cast(shape * scale, tf.int32)
 
-#   img = tf.image.resize(img, new_shape)
-#   img = img[tf.newaxis, :]
-#   return img
+  img = tf.image.resize(img, new_shape)
+  img = img[tf.newaxis, :]
+  return img
 
 # Create your views here.
 def index(request):
