@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 # =================================
-import tensorflow as tf
+# import tensorflow as tf
 # =================================
 import IPython.display as display
 
