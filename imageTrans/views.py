@@ -16,7 +16,7 @@ import functools
 
 def tensor_to_image(tensor):
   tensor = tensor*255
-  tensor = np.array(tensor, dtype=np.uint8)
+  tensor = np.array(tensor, dtype=np.uint8) 
   if np.ndim(tensor)>3:
     assert tensor.shape[0] == 1
     tensor = tensor[0]
@@ -47,10 +47,16 @@ def index(request):
     # style_path = tf.keras.utils.get_file('kandinsky5.jpg','https://storage.googleapis.com/download.tensorflow.org/example_images/Vassily_Kandinsky%2C_1913_-_Composition_7.jpg')
     # content_image = load_img(content_path)
     # style_image = load_img(style_path)
-    # hub_module = hub.load('https://tfhub.dev/google/magenta/arbitrary-image-stylization-v1-256/1')
+    # ==============================================================================
+    # pb_path = 'imageTransModel'
+    # hub_module = tf.saved_model.load(pb_path)
     # stylized_image = hub_module(tf.constant(content_image), tf.constant(style_image))[0]
-    # transedImg = tensor_to_image(stylized_image)
-    # return render(request, 'imageTrans/test.html',{'transedImg' : transedImg})
+    # resultImg = tensor_to_image(stylized_image)
+    # resultImg.save("resultImg.png",'PNG')
+    # return render(request, 'imageTrans/test.html',{'resultImg' : resultImg})
+
+    # ==============================================================================
+
     return render(request, 'imageTrans/test.html')
   else:
     return render(request, 'imageTrans/index.html')
