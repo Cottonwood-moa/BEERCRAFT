@@ -46,8 +46,8 @@ def index(request):
     # style_path = tf.keras.utils.get_file('kandinsky5.jpg','https://storage.googleapis.com/download.tensorflow.org/example_images/Vassily_Kandinsky%2C_1913_-_Composition_7.jpg')
     # style_path = 'style.jpg'
     
-    content_image = load_img(content_path)
-    style_image = load_img(style_path)
+    # content_image = load_img(content_path)
+    # style_image = load_img(style_path)
 
     # pb_path = 'imageTrans\imageTransModel'
     # hub_module = tf.saved_model.load(pb_path)
