@@ -3,15 +3,9 @@ from django.shortcuts import render
 # =================================
 import tensorflow as tf
 # =================================
-import IPython.display as display
-
-import matplotlib.pyplot as plt
-import matplotlib as mpl
 
 import numpy as np
 import PIL.Image
-import time
-import functools
 
 
 def tensor_to_image(tensor):
@@ -52,7 +46,7 @@ def index(request):
     content_image = load_img(content_path)
     style_image = load_img(style_path)
 
-    pb_path = 'imageTransModel'
+    pb_path = 'imageTrans\imageTransModel'
     hub_module = tf.saved_model.load(pb_path)
     stylized_image = hub_module(tf.constant(content_image), tf.constant(style_image))[0]
     resultImg = tensor_to_image(stylized_image)
