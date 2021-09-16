@@ -2,6 +2,8 @@ from django.shortcuts import render
 
 # =================================
 import tensorflow as tf
+import tensorflow_hub as hub
+
 # =================================
 
 import numpy as np
@@ -36,8 +38,7 @@ def load_img(path_to_img):
 # Create your views here.
 def index(request):
 
-  pb_path = 'imageTrans\imageTransModel'
-  hub_module = tf.saved_model.load(pb_path)
+  hub_module = hub.load('https://tfhub.dev/google/magenta/arbitrary-image-stylization-v1-256/1')
 
   if request.method == 'POST':
 
