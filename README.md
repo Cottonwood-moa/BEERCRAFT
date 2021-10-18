@@ -55,10 +55,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-아이템 기반 협업필터링 알고리즘을 활용한 맥주 추천 시스템
-[알고리즘](https://western-sky.tistory.com/58)
+아이템 기반 협업필터링 알고리즘을 활용한 맥주 추천 시스템  
+[참고블로그](https://western-sky.tistory.com/58)
 Here's why:
 * Your time should be focused on creating something amazing. A project that solves a problem and helps others
 * You shouldn't be doing the same tasks over and over like creating a README from scratch
