@@ -95,7 +95,12 @@
 <br />
 다섯가지 항목에 대한 클러스터 유형과 평점도 확인할 수 있습니다.
 <br />
-
+![image](https://user-images.githubusercontent.com/79053495/137684866-bf45c8e6-65b3-4ffd-a099-1696b753393c.png)  
+<br />
+국산 수제 맥주의 정보도 얻을 수 있습니다. 
+<br />
+![image](https://user-images.githubusercontent.com/79053495/137685028-e1853d41-bc36-43fc-b78e-168ffc923943.png)  
+![image](https://user-images.githubusercontent.com/79053495/137685052-355d54bd-4fdd-42aa-8d6a-02863ea1f93b.png)
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
