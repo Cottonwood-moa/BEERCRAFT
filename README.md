@@ -13,12 +13,14 @@
     <a href="http://13.209.239.133/"><strong>사이트 보기 »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
-  </p>
+   <ul class="social-icons">
+            <li><a href="https://blog.naver.com/flowermisty">이용석</a></li>
+            <li><a href="https://github.com/ijo0r98">임주란</a></li>
+            <li><a href="https://cottonwood-moa.tistory.com/">박건우</a></li>
+            <li><a href="https://github.com/Riah0987">주리아</a></li>
+            <li><a href="https://github.com/kang1seok">강원석</a></li>
+          </ul>
+  </p>https://tistory4.daumcdn.net/tistory/4706624/skin/images/beer.png
 </div>
 
 
