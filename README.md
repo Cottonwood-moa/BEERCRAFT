@@ -13,7 +13,7 @@
     <a href="http://13.209.239.133/"><strong>사이트 보기 »</strong></a>
     <br />
     <br />
-    <strong>TEAM</strong>
+    <strong>TEAM</strong><br />
             <a href="https://blog.naver.com/flowermisty">이용석</a>
             <a href="https://github.com/ijo0r98">임주란</a>
             <a href="https://cottonwood-moa.tistory.com/">박건우</a>
@@ -56,11 +56,12 @@
 ## About The Project
 
 아이템 기반 협업필터링 알고리즘을 활용한 맥주 추천 시스템  
-[참고블로그](https://western-sky.tistory.com/58)
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+[참고블로그](https://western-sky.tistory.com/58)  
+
+* '맥주' 키워드를 검색했을 때 네이버를 기준으로 나오는 모든 블로그의 텍스트를 전부 스크래핑 하여 워드클라우드로 만들어 트렌드를 파악하였습니다.
+* 맥주간 유사도 기반 추천 -> 맥주의 평점을 기반으로 코사인 유사도를 추출하여 이용자의 입맛에 맞는 다른 맥주를 추천합니다.
+* 이용자의 평점이 반영된 맥주 추천 -> 아이템 기반의 최근접 이웃 CF 알고리즘을 이용한 맥주 추천입니다.
+* 최근 국산 수제맥주의 관심이 늘어남에 따라 국산 수제 맥주의 정보와 리뷰를 자유롭게 공유할 수 있는 공간도 마련되어 있습니다.
 
 Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
 
