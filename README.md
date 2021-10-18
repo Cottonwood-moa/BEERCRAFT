@@ -77,9 +77,15 @@
 
 <!-- GETTING STARTED -->
 ## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+먼저 서비스를 이용하려면 로그인이 필요합니다.  
+![image](https://user-images.githubusercontent.com/79053495/137683947-cd4a1736-611f-419c-9b19-d1f9a3a89f64.png)  
+시작하기 버튼을 눌러주세요. 
+![image](https://user-images.githubusercontent.com/79053495/137684050-caefa572-78a1-4365-9f41-229e0ab30819.png)  
+가장 좋아하는 맥주와 맛, 향, 목넘김 중 우선순위 한개를 선택해주세요.  
+![image](https://user-images.githubusercontent.com/79053495/137684414-963354e7-e6d1-4ec8-80b2-1ea37962992d.png)  
+유사도 기반으로 맥주가 추천됩니다.  
+![image](https://user-images.githubusercontent.com/79053495/137684516-8f3f97d0-0fd0-4008-8f86-ec8cb612ecb4.png)  
+다섯가지 항목에 대한 클러스터 유형과 평점도 확인할 수 있습니다.
 
 ### Prerequisites
 
