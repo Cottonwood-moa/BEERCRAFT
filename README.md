@@ -63,26 +63,13 @@
 * 이용자의 평점이 반영된 맥주 추천 -> 아이템 기반의 최근접 이웃 CF 알고리즘을 이용한 맥주 추천입니다.
 * 최근 국산 수제맥주의 관심이 늘어남에 따라 국산 수제 맥주의 정보와 리뷰를 자유롭게 공유할 수 있는 공간도 마련되어 있습니다.
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
-
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-* [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
+장고(django) 프레임워크를 기반으로 만들었으며 웹 프론트는 jquery와 Bootstrap 을 사용하였습니다.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
