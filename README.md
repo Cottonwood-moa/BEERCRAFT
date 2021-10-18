@@ -13,12 +13,13 @@
     <a href="http://13.209.239.133/"><strong>사이트 보기 »</strong></a>
     <br />
     <br />
+    <strong>TEAM</strong>
             <a href="https://blog.naver.com/flowermisty">이용석</a>
             <a href="https://github.com/ijo0r98">임주란</a>
             <a href="https://cottonwood-moa.tistory.com/">박건우</a>
             <a href="https://github.com/Riah0987">주리아</a>
             <a href="https://github.com/kang1seok">강원석</a>
-  </p>https://tistory4.daumcdn.net/tistory/4706624/skin/images/beer.png
+  </p>
 </div>
 
 
