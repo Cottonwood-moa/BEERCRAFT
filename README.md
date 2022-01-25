@@ -44,5 +44,5 @@
 ![image](https://user-images.githubusercontent.com/79053495/137685052-355d54bd-4fdd-42aa-8d6a-02863ea1f93b.png)
 ㅤ  
 ## More Info  
-[깃허브 저장소](https://github.com/Cottonwood-moa/characterTest)  
+[깃허브 저장소](https://github.com/Cottonwood-moa/BEERCRAFT)  
 [자세한 내용은 블로그를 참조해주세요!](https://cottonwood-moa.tistory.com/)
