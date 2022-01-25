@@ -1,4 +1,4 @@
-# BEERCRAFT  
+#  :yum:BEERCRAFT  
 ㅤ  
 `멋쟁이 사자처럼` 인공지능 웹 개발 과정  
 ㅤ  
