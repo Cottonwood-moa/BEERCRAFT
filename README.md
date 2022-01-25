@@ -15,7 +15,32 @@
 ㅤ  
 ### Built With  
 ㅤ  
-장고(django) 프레임워크를 기반으로 만들었으며 웹 프론트는 jquery와 Bootstrap 을 사용하였습니다.  
+```json
+asgiref==3.3.4
+beautifulsoup4==4.9.3
+cycler==0.10.0
+Django==3.1.3
+django-bootstrap4==3.0.1
+django-ckeditor==6.1.0
+django-js-asset==1.2.2
+joblib==1.0.1
+kiwisolver==1.3.1
+Markdown==3.3.4
+matplotlib==3.4.2
+numpy==1.21.1
+pandas==1.3.1
+Pillow==8.3.1
+pyparsing==2.4.7
+python-dateutil==2.8.2
+pytz==2021.1
+scikit-learn==0.24.2
+scipy==1.7.1
+six==1.16.0
+soupsieve==2.2.1
+sqlparse==0.4.1
+threadpoolctl==2.2.0
+typing-extensions==3.10.0.0
+``` 
 ㅤ  
 ## Getting Started  
 먼저 서비스를 이용하려면 로그인이 필요합니다.  
